@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace ElevenNote.Models
 {
-    public class NoteEdit
+    public class CategoryListItem
     {
-        public int NoteId { get; set; }
-        public string Title { get; set; }
-        public string Content { get; set; }
+        [Key]
         public int CategoryId { get; set; }
 
-
+        [Required]
+        public string Name { get; set; }
     }
 }
