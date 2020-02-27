@@ -16,12 +16,6 @@ namespace ElevenNote.Models
 
         [Display(Name ="Modified")]
         public DateTimeOffset? ModifiedUtc { get; set; }
-
-        public IHttpACtionResult Get(int id)
-        {
-            NoteService noteService = CreateNoteService();
-            var note = noteService.GetNoteById(id);
-            return Ok();
-        }
+       
     }
 }
