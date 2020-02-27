@@ -9,6 +9,8 @@ namespace ElevenNote.Models
     {
         [Key]
         public int NoteId { get; set; }
+
+        [Required]
         public string Title { get; set; }
 
         [Display(Name="Created")]
